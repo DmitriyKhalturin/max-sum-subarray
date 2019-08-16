@@ -7,7 +7,7 @@ class Main {
     fun main(args: Array<String>) {
       print("Put Integer numbers: ")
 
-      val buffer = readLine()
+      val buffer = readLine()?.trimStart()?.trimEnd()
 
       try {
         val data = IntegersArray(buffer)
